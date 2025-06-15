@@ -30,12 +30,7 @@ export const CurrentCoursePage = memo((props: CurrentCoursePageProps) => {
         >
             <h2 className={cls.header}>{course.title}</h2>
             <div className={cls.description}>{course.description}</div>
-            {imagePaths && (
-                <>
-                    <span className={cls.text_foto}>Наши фото</span>
-                    <Slider imagePaths={imagePaths} />
-                </>
-            )}
+            {imagePaths && <Slider imagePaths={imagePaths} />}
         </VStack>
     );
 });
