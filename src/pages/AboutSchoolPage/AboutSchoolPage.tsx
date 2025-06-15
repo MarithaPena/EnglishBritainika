@@ -59,6 +59,7 @@ export function AboutSchoolPage() {
                 background:
                     'linear-gradient(to bottom right, #f9fafb, #e5e7eb)',
             }}
+            className={cls.MethodsPage}
         >
             <div style={containerStyle}>
                 <h1

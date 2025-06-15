@@ -1,5 +1,8 @@
 .MediaBlock {
     padding: 20px 200px 0 200px;
+    background-color: rgb(17 24 39);
+    color: rgb(202, 199, 199);
+    height: 100vh;
 }
 
 .header {

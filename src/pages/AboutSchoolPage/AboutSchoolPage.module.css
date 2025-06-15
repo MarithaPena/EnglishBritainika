@@ -1,4 +1,7 @@
 .MethodsPage {
+    background-color: rgb(35, 38, 44);
+    color: rgb(202, 199, 199);
+    height: 100vh;
 }
 
 .course {

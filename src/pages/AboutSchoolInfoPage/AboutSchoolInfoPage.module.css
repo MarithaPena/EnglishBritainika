@@ -1,5 +1,7 @@
 .AboutSchoolInfoPage {
     padding: 20px 200px 30px 200px;
+    background-color: rgb(17 24 39);
+    color: rgb(202, 199, 199);
 }
 
 .wrapper_img {
