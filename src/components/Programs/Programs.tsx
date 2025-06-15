@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { classNames } from '../../shared/helpers/classNames/classNames';
 import { HStack } from '../../shared/ui/Stack';
 import cls from './Programs.module.css';
@@ -18,7 +19,7 @@ export const Programs = memo((props: ProgramsProps) => {
                 стандартам и адаптированы под русскоязычных учеников
             </div>
             <HStack justify="center" gap="32" className={cls.wrapper_blocks}>
-                <a href="/course">
+                <Link to="/course">
                     <div className={cls.block}>
                         <span className={cls.title}>Курсы</span>
                         <br />
@@ -31,7 +32,7 @@ export const Programs = memo((props: ProgramsProps) => {
                         </span>
                         <br />
                     </div>
-                </a>
+                </Link>
                 <div className={cls.block}>
                     <span className={cls.title}>Методики преподавания</span>
                     <br />

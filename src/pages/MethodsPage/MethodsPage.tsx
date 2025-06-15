@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
-import { courses } from '../../shared/const/courses';
-import cls from './CoursePage.module.css';
+import cls from './MethodsPage.module.css';
+import { methods } from '../../shared/const/methods';
 
-export function CoursePage() {
+export function MethodsPage() {
     const containerStyle = {
         maxWidth: '1200px',
         margin: '0 auto',
@@ -69,11 +69,11 @@ export function CoursePage() {
                         marginBottom: '2rem',
                     }}
                 >
-                    Наши курсы
+                    Наши методики
                 </h1>
                 <div style={gridStyle}>
-                    {courses.map((item) => (
-                        <Link to={`/course/${item.id}`} className={cls.link}>
+                    {methods.map((item) => (
+                        <Link to={`/methods/${item.id}`} className={cls.link}>
                             <div style={cardStyle}>
                                 <h3 style={headingStyle}>{item.title}</h3>
                                 <p style={descriptionStyle}>Подробнее</p>

@@ -1,0 +1,22 @@
+.AboutSchoolInfoPage {
+    padding: 20px 200px 30px 200px;
+}
+
+.wrapper_img {
+    flex-wrap: wrap;
+}
+
+.img {
+    height: 450px;
+}
+
+.header {
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+.descr {
+    margin-top: 10px;
+    font-size: 18px;
+    font-style: italic;
+}

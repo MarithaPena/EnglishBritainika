@@ -1,8 +1,8 @@
 import { Link } from 'react-router-dom';
-import { courses } from '../../shared/const/courses';
-import cls from './CoursePage.module.css';
+import cls from './AboutSchoolPage.module.css';
+import { about_school } from '../../shared/const/about_school';
 
-export function CoursePage() {
+export function AboutSchoolPage() {
     const containerStyle = {
         maxWidth: '1200px',
         margin: '0 auto',
@@ -24,6 +24,7 @@ export function CoursePage() {
         borderLeft: '4px solid #2563eb',
         transition: 'all 0.3s ease',
         cursor: 'pointer',
+        height: 80,
     };
 
     const headingStyle = {
@@ -69,11 +70,15 @@ export function CoursePage() {
                         marginBottom: '2rem',
                     }}
                 >
-                    Наши курсы
+                    О нашей школе
                 </h1>
                 <div style={gridStyle}>
-                    {courses.map((item) => (
-                        <Link to={`/course/${item.id}`} className={cls.link}>
+                    {about_school.map((item) => (
+                        <Link
+                            to={`/about_school/${item.id}`}
+                            className={cls.link}
+                            key={item.id}
+                        >
                             <div style={cardStyle}>
                                 <h3 style={headingStyle}>{item.title}</h3>
                                 <p style={descriptionStyle}>Подробнее</p>
