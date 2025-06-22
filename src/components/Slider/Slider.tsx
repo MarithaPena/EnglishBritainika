@@ -100,7 +100,9 @@ export const Slider = memo((props: SliderProps) => {
 
                 <div className={cls.carouselContainer}>
                     <div
-                        className={cls.carouselTrack}
+                        className={classNames(cls.carouselTrack, {
+                            [cls.centered]: imagePaths.length < 3,
+                        })}
                         style={{
                             transform: `translateX(-${
                                 currentIndex * (500 + 16)

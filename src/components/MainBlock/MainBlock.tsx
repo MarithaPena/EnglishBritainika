@@ -20,7 +20,7 @@ export const MainBlock = memo((props: MainBlockProps) => {
                         общение
                     </span>
                 </div>
-                <img src={Image} width={400} />
+                <img src={Image} width={350} />
             </HStack>
         </div>
     );

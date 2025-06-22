@@ -1,6 +1,6 @@
 .MainBlock {
     background: linear-gradient(to right, #212121, #ffffff);
-    padding-top: 200px;
+    padding: 200px 20px 0 20px;
     height: 90vh;
 }
 

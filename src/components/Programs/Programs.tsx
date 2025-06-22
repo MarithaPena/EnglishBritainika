@@ -19,8 +19,8 @@ export const Programs = memo((props: ProgramsProps) => {
                 стандартам и адаптированы под русскоязычных учеников
             </div>
             <HStack justify="center" gap="32" className={cls.wrapper_blocks}>
-                <Link to="/EnglishBritainika/course">
-                    <div className={cls.block}>
+                <div className={cls.block}>
+                    <Link to="/EnglishBritainika/course">
                         <span className={cls.title}>Курсы</span>
                         <br />
                         <br />
@@ -31,10 +31,11 @@ export const Programs = memo((props: ProgramsProps) => {
                             помогут вам
                         </span>
                         <br />
-                    </div>
-                </Link>
-                <Link to="/EnglishBritainika/methods">
-                    <div className={cls.block}>
+                    </Link>
+                </div>
+
+                <div className={cls.block}>
+                    <Link to="/EnglishBritainika/methods">
                         <span className={cls.title}>Методики преподавания</span>
                         <br />
                         <br />
@@ -45,10 +46,11 @@ export const Programs = memo((props: ProgramsProps) => {
                             владение им в любой ситуации
                         </span>
                         <br />
-                    </div>
-                </Link>
-                <Link to="/EnglishBritainika/about_school">
-                    <div className={cls.block}>
+                    </Link>
+                </div>
+
+                <div className={cls.block}>
+                    <Link to="/EnglishBritainika/about_school">
                         <span className={cls.title}>О школе</span>
                         <br />
                         <br />
@@ -60,8 +62,8 @@ export const Programs = memo((props: ProgramsProps) => {
                             Кембриджа.
                         </span>
                         <br />
-                    </div>
-                </Link>
+                    </Link>
+                </div>
             </HStack>
         </div>
     );

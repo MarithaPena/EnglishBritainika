@@ -1,4 +1,7 @@
 .MethodsPage {
+    padding-top: 70px;
+    background-color: rgb(35, 38, 44);
+    min-height: 100vh;
 }
 
 .course {

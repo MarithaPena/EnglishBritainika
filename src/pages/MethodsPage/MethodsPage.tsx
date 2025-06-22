@@ -17,7 +17,7 @@ export function MethodsPage() {
     };
 
     const cardStyle = {
-        backgroundColor: '#fff',
+        backgroundColor: 'rgb(202, 199, 199)',
         padding: '1.5rem',
         borderRadius: '1rem',
         boxShadow: '0 4px 6px rgba(0, 0, 0, 0.05)',
@@ -52,20 +52,14 @@ export function MethodsPage() {
     };
 
     return (
-        <main
-            style={{
-                minHeight: '100vh',
-                background:
-                    'linear-gradient(to bottom right, #f9fafb, #e5e7eb)',
-            }}
-        >
+        <main className={cls.MethodsPage}>
             <div style={containerStyle}>
                 <h1
                     style={{
                         textAlign: 'center',
                         fontSize: '2.5rem',
                         fontWeight: 'bold',
-                        color: '#111827',
+                        color: 'rgb(202, 199, 199)',
                         marginBottom: '2rem',
                     }}
                 >

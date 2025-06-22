@@ -16,12 +16,13 @@ export const Header = memo((props: HeaderProps) => {
             justify="between"
             className={classNames(cls.Header, {}, [className])}
         >
-            <img src={Logo} alt="Logo" height={80} />
+            <Link to={'/EnglishBritainika/'}>
+                <img src={Logo} alt="Logo" height={80} />
+            </Link>
             <HStack className={cls.wrapper_a} gap="32">
                 <Link to="/EnglishBritainika/about_school">О школе</Link>
                 <Link to="/EnglishBritainika/course">Курсы</Link>
                 <Link to="/EnglishBritainika/methods">Методики</Link>
-                <Link to="#">Медиа</Link>
             </HStack>
         </HStack>
     );

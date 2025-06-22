@@ -50,7 +50,10 @@ export const AboutSchoolInfoPage = memo((props: AboutSchoolInfoPageProps) => {
                     <>
                         <div className={cls.header}>{item.name}</div>
                         <div className={cls.descr}>{item.description}</div>
-                        <Slider imagePaths={item.imagePaths} />
+                        <Slider
+                            className={cls.slider}
+                            imagePaths={item.imagePaths}
+                        />
                     </>
                 ))}
             </>
