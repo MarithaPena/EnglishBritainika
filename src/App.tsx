@@ -20,7 +20,7 @@ export default function App() {
             />
             <Route path="/course/:id" element={<CurrentCoursePage />} />
             <Route path="/methods/:id" element={<CurrentMethodPage />} />
-            <Route path="*" element={<Navigate to="/404" replace />} />
+            {/* <Route path="*" element={<Navigate to="/404" replace />} /> */}
         </Routes>
     );
 }
