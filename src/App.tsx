@@ -1,4 +1,4 @@
-import { Route, Routes } from 'react-router-dom';
+import { Navigate, Route, Routes } from 'react-router-dom';
 import { MainPage } from './pages/MainPage/MainPage';
 import { CoursePage } from './pages/CoursePage/CoursePage';
 import { CurrentCoursePage } from './pages/CurrentCoursePage/CurrentCoursePage';
@@ -10,17 +10,29 @@ import { AboutSchoolInfoPage } from './pages/AboutSchoolInfoPage/AboutSchoolInfo
 export default function App() {
     return (
         <Routes>
-            <Route path="/" element={<MainPage />} />
-            <Route path="/course" element={<CoursePage />} />
-            <Route path="/methods" element={<MethodsPage />} />
-            <Route path="/about_school" element={<AboutSchoolPage />} />
+            <Route path="/EnglishBritainika/" element={<MainPage />} />
+            <Route path="/EnglishBritainika/course" element={<CoursePage />} />
             <Route
-                path="/about_school/:info"
+                path="/EnglishBritainika/methods"
+                element={<MethodsPage />}
+            />
+            <Route
+                path="/EnglishBritainika/about_school"
+                element={<AboutSchoolPage />}
+            />
+            <Route
+                path="/EnglishBritainika/about_school/:info"
                 element={<AboutSchoolInfoPage />}
             />
-            <Route path="/course/:id" element={<CurrentCoursePage />} />
-            <Route path="/methods/:id" element={<CurrentMethodPage />} />
-            {/* <Route path="*" element={<Navigate to="/404" replace />} /> */}
+            <Route
+                path="/EnglishBritainika/course/:id"
+                element={<CurrentCoursePage />}
+            />
+            <Route
+                path="/EnglishBritainika/methods/:id"
+                element={<CurrentMethodPage />}
+            />
+            <Route path="*" element={<Navigate to="/404" replace />} />
         </Routes>
     );
 }
