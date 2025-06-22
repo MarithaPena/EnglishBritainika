@@ -73,7 +73,10 @@ export function CoursePage() {
                 </h1>
                 <div style={gridStyle}>
                     {courses.map((item) => (
-                        <Link to={`/course/${item.id}`} className={cls.link}>
+                        <Link
+                            to={`/EnglishBritainika/course/${item.id}`}
+                            className={cls.link}
+                        >
                             <div style={cardStyle}>
                                 <h3 style={headingStyle}>{item.title}</h3>
                                 <p style={descriptionStyle}>Подробнее</p>
@@ -87,7 +90,7 @@ export function CoursePage() {
                         textAlign: 'center',
                     }}
                 >
-                    <Link to="/" style={backButtonStyle}>
+                    <Link to="/EnglishBritainika/" style={backButtonStyle}>
                         Назад на главную
                     </Link>
                 </div>

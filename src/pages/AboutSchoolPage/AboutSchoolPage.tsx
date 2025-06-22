@@ -76,7 +76,7 @@ export function AboutSchoolPage() {
                 <div style={gridStyle}>
                     {about_school.map((item) => (
                         <Link
-                            to={`/about_school/${item.id}`}
+                            to={`/EnglishBritainika/about_school/${item.id}`}
                             className={cls.link}
                             key={item.id}
                         >
@@ -93,7 +93,7 @@ export function AboutSchoolPage() {
                         textAlign: 'center',
                     }}
                 >
-                    <Link to="/" style={backButtonStyle}>
+                    <Link to="/EnglishBritainika/" style={backButtonStyle}>
                         Назад на главную
                     </Link>
                 </div>

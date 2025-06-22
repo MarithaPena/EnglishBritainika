@@ -18,9 +18,9 @@ export const Header = memo((props: HeaderProps) => {
         >
             <img src={Logo} alt="Logo" height={80} />
             <HStack className={cls.wrapper_a} gap="32">
-                <Link to="/about_school">О школе</Link>
-                <Link to="/course">Курсы</Link>
-                <Link to="/methods">Методики</Link>
+                <Link to="/EnglishBritainika/about_school">О школе</Link>
+                <Link to="/EnglishBritainika/course">Курсы</Link>
+                <Link to="/EnglishBritainika/methods">Методики</Link>
                 <Link to="#">Медиа</Link>
             </HStack>
         </HStack>

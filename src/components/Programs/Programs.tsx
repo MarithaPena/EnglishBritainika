@@ -19,7 +19,7 @@ export const Programs = memo((props: ProgramsProps) => {
                 стандартам и адаптированы под русскоязычных учеников
             </div>
             <HStack justify="center" gap="32" className={cls.wrapper_blocks}>
-                <Link to="/course">
+                <Link to="/EnglishBritainika/course">
                     <div className={cls.block}>
                         <span className={cls.title}>Курсы</span>
                         <br />
@@ -33,7 +33,7 @@ export const Programs = memo((props: ProgramsProps) => {
                         <br />
                     </div>
                 </Link>
-                <Link to="/methods">
+                <Link to="/EnglishBritainika/methods">
                     <div className={cls.block}>
                         <span className={cls.title}>Методики преподавания</span>
                         <br />
@@ -47,7 +47,7 @@ export const Programs = memo((props: ProgramsProps) => {
                         <br />
                     </div>
                 </Link>
-                <Link to="/about_school">
+                <Link to="/EnglishBritainika/about_school">
                     <div className={cls.block}>
                         <span className={cls.title}>О школе</span>
                         <br />
