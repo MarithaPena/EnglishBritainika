@@ -31,22 +31,38 @@ import img30 from '../../shared/assets/img/media/30.jpeg';
 // import img31 from '../../shared/assets/img/media/31.jpeg';
 // import img32 from '../../shared/assets/img/media/32.jpeg';
 // import img33 from '../../shared/assets/img/media/33.jpeg';
-// import img34 from '../../shared/assets/img/media/34.jpeg';
+import img34 from '../../shared/assets/img/media/34.jpeg';
 import img35 from '../../shared/assets/img/media/35.jpeg';
 import img36 from '../../shared/assets/img/media/36.jpeg';
-// import img37 from '../../shared/assets/img/media/37.jpeg';
+import img37 from '../../shared/assets/img/media/37.jpeg';
 // import img38 from '../../shared/assets/img/media/38.jpeg';
 // import img39 from '../../shared/assets/img/media/39.jpeg';
 // import img40 from '../../shared/assets/img/media/40.jpeg';
 // import img41 from '../../shared/assets/img/media/41.jpeg';
 // import img42 from '../../shared/assets/img/media/42.jpeg';
 // import img43 from '../../shared/assets/img/media/43.jpeg';
+import img44 from '../../shared/assets/img/media/44.jpeg';
+import kids3 from '../../shared/assets/img/media/kids3.jpeg';
+import kids4 from '../../shared/assets/img/media/kids4.jpeg';
+import kids5 from '../../shared/assets/img/media/kids5.jpeg';
+import kids6 from '../../shared/assets/img/media/kids6.jpeg';
+import Individual_teens1 from '../../shared/assets/img/media/Individual_teens1.jpeg';
+import Individual_teens2 from '../../shared/assets/img/media/Individual_teens2.jpeg';
+import Individual_adults1 from '../../shared/assets/img/media/Individual_adults1.jpeg';
+import Individual_adults2 from '../../shared/assets/img/media/Individual_adults2.jpeg';
+import Individual_adults3 from '../../shared/assets/img/media/Individual_adults3.jpeg';
+import Business_English1 from '../../shared/assets/img/media/Business_English1.jpeg';
+import Business_English2 from '../../shared/assets/img/media/Business_English2.jpeg';
+import Business_English3 from '../../shared/assets/img/media/Business_English3.jpeg';
+import English_programmers2 from '../../shared/assets/img/media/English_programmers2.jpeg';
+import English_programmers1 from '../../shared/assets/img/media/English_programmers1.jpeg';
+import Medical_English1 from '../../shared/assets/img/media/Medical_English1.jpeg';
 
 export const courses = [
     {
         id: 1,
         title: 'Групповое обучение для детей и подростков',
-        imagePaths: [img28],
+        imagePaths: [img28, kids3, kids4, kids5, kids6],
         description: `Идеальный старт изучения английского языка для детей и подростков — в комфортной, дружеской атмосфере мини-группы. Наши программы разработаны с учётом возраста, уровня знаний и интересов детей.
                     Современные групповые курсы английского для детей и подростков (до 5 человек в группе):
                     Интенсивность на выбор: 2 или 3 раза в неделю.
@@ -59,7 +75,7 @@ export const courses = [
     {
         id: 2,
         title: 'Групповое обучение. Взрослое отделение',
-        imagePaths: [img23],
+        imagePaths: [img29, img23, img34, img44],
         description: `Освойте английский язык в комфортной компании единомышленников. Групповые занятия — это эффективная практика общения, мотивация и быстрый рост навыков в удобном графике.
             Групповые занятия для взрослых (до 4 человек):
             Занятия 2 или 3 раза в неделю по вашему выбору.
@@ -73,7 +89,7 @@ export const courses = [
     {
         id: 3,
         title: 'Индивидуальное. Дети',
-        imagePaths: [img35],
+        imagePaths: [img35, Individual_teens1, Individual_teens2],
         description: `Персональные занятия для детей — наилучший способ раскрыть потенциал ребёнка в изучении английского. Индивидуальный подход помогает адаптировать программу под интересы и особенности каждого ученика.
 Индивидуальные занятия для детей:
 Индивидуальный подход к каждому ребенку.
@@ -88,6 +104,12 @@ export const courses = [
     {
         id: 4,
         title: 'Индивидуальное обучение (от 16 лет)',
+        imagePaths: [
+            Individual_adults1,
+            Individual_adults2,
+            Individual_adults3,
+            img37,
+        ],
         description: `Хотите освоить английский максимально эффективно? Индивидуальные занятия — идеальный вариант для тех, кто ценит своё время и хочет видеть быстрый результат.
 Персональные занятия английским для подростков и взрослых:
 Полностью индивидуальный график.
@@ -99,7 +121,13 @@ export const courses = [
     {
         id: 5,
         title: 'Бизнес Английский',
-        imagePaths: [img22],
+        imagePaths: [
+            img22,
+            Business_English1,
+            Business_English2,
+            Business_English3,
+            img36,
+        ],
         description: `Деловой английский — это не просто язык, это инструмент для развития вашей карьеры, успешных переговоров и уверенного общения с международными партнёрами.
 Деловой английский для профессионалов:
 Мини-группы 1+1 или индивидуально.
@@ -113,7 +141,7 @@ export const courses = [
     {
         id: 6,
         title: 'Английский для программистов',
-        imagePaths: [img36],
+        imagePaths: [English_programmers1, English_programmers2],
         description: `Для специалистов IT-сферы владение английским — неотъемлемая часть профессионального роста. Мы предлагаем специализированный курс для разработчиков любого уровня.
 Английский для IT-специалистов:
 Специализированная лексика, термины, интервью на английском, работа с документацией.
@@ -124,6 +152,7 @@ export const courses = [
     {
         id: 7,
         title: 'Медицинский английский',
+        imagePaths: [Medical_English1],
         description: `Откройте для себя медицинский английский — ключевой навык для успешной международной карьеры в сфере здравоохранения.
 Профессиональный английский для врачей и медицинских специалистов:
 Интенсивная программа 2–3 раза в неделю.
@@ -156,7 +185,7 @@ export const courses = [
     {
         id: 10,
         title: 'Speaking Club',
-        imagePaths: [img29, img30],
+        imagePaths: [img30],
         description: `Хотите свободно общаться на английском? Наш Speaking Club — это регулярная практика с носителями языка в дружеской атмосфере.
 Разговорный клуб с носителями языка:
 Занятия в мини-группах до 5 человек.

@@ -12,3 +12,8 @@
     font-weight: 300;
     color: rgb(156 163 175);
 }
+
+.video {
+    width: 700px;
+    margin-top: 20px;
+}

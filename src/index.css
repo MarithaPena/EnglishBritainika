@@ -20,3 +20,29 @@ h3 {
 body {
     margin: 0;
 }
+
+*::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+}
+
+*::-webkit-scrollbar-thumb::before {
+    background-color: rgb(193, 193, 193, 1);
+    opacity: 30%;
+    border-radius: 6px;
+}
+
+*::-webkit-scrollbar-thumb::after {
+    background-color: rgb(193, 193, 193, 1);
+    border-radius: 6px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: rgb(193, 193, 193, 1);
+    border-radius: 6px;
+}
+
+*::-webkit-scrollbar-track {
+    /* background: rgba(2, 142, 74, 1); */
+    border-radius: 6px;
+}
