@@ -14,6 +14,28 @@
 }
 
 .video {
-    width: 700px;
-    margin-top: 20px;
+    width: 523px;
+    margin-top: 149px;
+    height: 322px;
+    object-fit: cover;
+    display: block;
+}
+
+.video_container {
+    position: relative;
+    width: 787px;
+    height: 596px;
+    display: flex;
+    justify-content: center;
+}
+
+.border_foto {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../shared//assets/img/border/golden_foto.png'); /* Путь к твоей PNG-рамке */
+    background-size: cover;
+    pointer-events: none; /* чтобы рамка не мешала кликам по видео */
+    z-index: 2;
 }

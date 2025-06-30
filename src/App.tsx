@@ -7,7 +7,7 @@ import { CurrentMethodPage } from './pages/CurrentMethodPage/CurrentMethodPage';
 import { AboutSchoolPage } from './pages/AboutSchoolPage/AboutSchoolPage';
 import { AboutSchoolInfoPage } from './pages/AboutSchoolInfoPage/AboutSchoolInfoPage';
 import { Header } from './components/Header/Header';
-import { Footer } from './components/Footer/Footer';
+// import { Footer } from './components/Footer/Footer';
 
 export default function App() {
     return (
@@ -41,7 +41,7 @@ export default function App() {
                 />
                 <Route path="*" element={<Navigate to="/404" replace />} />
             </Routes>
-            <Footer />
+            {/* <Footer /> */}
         </>
     );
 }

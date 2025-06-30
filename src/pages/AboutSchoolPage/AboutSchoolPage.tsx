@@ -63,8 +63,6 @@ export function AboutSchoolPage() {
                 <h1
                     style={{
                         textAlign: 'center',
-                        fontSize: '2.5rem',
-                        fontWeight: 'bold',
                         marginBottom: '2rem',
                     }}
                 >

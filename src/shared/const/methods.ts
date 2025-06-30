@@ -1,7 +1,25 @@
+import Language_Immersion_1 from '../assets/img/methods/Language_Immersion_1.jpeg';
+import Language_Immersion_2 from '../assets/img/methods/Language_Immersion_2.jpeg';
+import Language_Immersion_3 from '../assets/img/methods/Language_Immersion_3.jpeg';
+import community_learning_1 from '../assets/img/methods/community_learning_1.jpeg';
+import community_learning_2 from '../assets/img/methods/community_learning_2.jpeg';
+import community_learning_3 from '../assets/img/methods/community_learning_3.jpeg';
+import natural_approach_1 from '../assets/img/methods/natural_approach_1.jpeg';
+import natural_approach_2 from '../assets/img/methods/natural_approach_2.jpeg';
+import natural_approach_3 from '../assets/img/methods/natural_approach_3.jpeg';
+import task_based_3 from '../assets/img/methods/task_based_3.jpeg';
+import task_based_2 from '../assets/img/methods/task_based_2.jpeg';
+import task_based_1 from '../assets/img/methods/task_based_1.jpeg';
+
 export const methods = [
     {
         id: 1,
-        title: 'Методика 1',
+        title: 'Language Immersion',
+        imagePaths: [
+            Language_Immersion_1,
+            Language_Immersion_2,
+            Language_Immersion_3,
+        ],
         description: `Dynamic Immersion: Учимся как дети
 Метод Dynamic Immersion (Динамическое погружение) помогает осваивать язык так же, как дети учат родную речь — через опыт, контекст и интуицию. Вместо зубрёжки правил и перевода слов ученики начинают понимать язык естественно, опираясь на визуальные и ситуационные подсказки.
 Как работает Dynamic Immersion:
@@ -22,7 +40,12 @@ export const methods = [
     },
     {
         id: 2,
-        title: 'Методика 2',
+        title: 'Community Language Learning',
+        imagePaths: [
+            community_learning_1,
+            community_learning_2,
+            community_learning_3,
+        ],
         description: `Community Language Learning (CLL): Изучение языка в атмосфере поддержки
 Community Language Learning (CLL) — это уникальный, человекоориентированный метод изучения языка. Он основан на принципах консультирования и психологии, создавая безопасную и поддерживающую атмосферу, где ученики могут свободно экспериментировать с языком, снижая тревожность и приобретая настоящую уверенность.
 Чем CLL выделяется?
@@ -39,7 +62,12 @@ CLL особенно эффективен в групповых занятиях
     },
     {
         id: 3,
-        title: 'Методика 3',
+        title: 'Natural Approach',
+        imagePaths: [
+            natural_approach_1,
+            natural_approach_2,
+            natural_approach_3,
+        ],
         description: `The Natural Approach: Осваиваем язык так же, как родной
 The Natural Approach (Естественный подход) делает изучение языка максимально естественным. Как ребёнок осваивает свой первый язык: слушая, наблюдая и постепенно начиная говорить — так и здесь. Метод строится на реальном общении и понимании, без давления и заучивания грамматики с первых занятий.
 Почему The Natural Approach эффективен?
@@ -60,7 +88,8 @@ The Natural Approach (Естественный подход) делает изу
     },
     {
         id: 4,
-        title: 'Методика 4',
+        title: 'Task Based',
+        imagePaths: [task_based_1, task_based_2, task_based_3],
         description: `Task-Based Language Teaching (TBLT): Изучаем язык через реальные задачи
 Task-Based Language Teaching (TBLT) ставит в центр обучения реальные практические задачи. Вместо изучения правил и упражнений, студенты используют язык для решения проблем, выполнения проектов и общения в ситуациях, с которыми они сталкиваются в жизни и на работе.
 Почему TBLT работает:

@@ -2,7 +2,7 @@ import { classNames } from '../../shared/helpers/classNames/classNames';
 import { HStack } from '../../shared/ui/Stack';
 import cls from './MainBlock.module.css';
 import { memo } from 'react';
-import Image from '../../shared/assets/img/main.jpg';
+import Image from '../../shared/assets/img/media/13.jpeg';
 
 interface MainBlockProps {
     className?: string;
@@ -20,7 +20,15 @@ export const MainBlock = memo((props: MainBlockProps) => {
                         общение
                     </span>
                 </div>
-                <img src={Image} width={350} />
+                <div className={cls.wrapper_border}>
+                    <img
+                        style={{ borderRadius: '20px' }}
+                        src={Image}
+                        width={750}
+                        className={cls.img}
+                    />
+                    <div className={cls.border}></div>
+                </div>
             </HStack>
         </div>
     );

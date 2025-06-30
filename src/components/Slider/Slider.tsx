@@ -30,10 +30,10 @@ export const Slider = memo((props: SliderProps) => {
         }
     };
 
-    const openModal = (index: number) => {
-        setModalImageIndex(index);
-        setIsModalOpen(true);
-    };
+    // const openModal = (index: number) => {
+    //     setModalImageIndex(index);
+    //     setIsModalOpen(true);
+    // };
 
     const closeModal = () => {
         setIsModalOpen(false);
@@ -114,7 +114,7 @@ export const Slider = memo((props: SliderProps) => {
                             <div
                                 key={index}
                                 className={cls.slide}
-                                onClick={() => openModal(index)}
+                                // onClick={() => openModal(index)}
                                 role="button"
                                 tabIndex={0}
                                 aria-label={`Посмотреть фото ${

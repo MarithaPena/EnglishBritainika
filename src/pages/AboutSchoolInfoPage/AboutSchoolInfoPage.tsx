@@ -9,6 +9,8 @@ import degree_3 from '../../shared/assets/img/degree/3.jpg';
 import degree_4 from '../../shared/assets/img/degree/4.jpg';
 import degree_5 from '../../shared/assets/img/degree/5.jpg';
 import degree_6 from '../../shared/assets/img/degree/6.jpg';
+import award_1 from '../../shared/assets/img/media/24.jpeg';
+import award_2 from '../../shared/assets/img/media/deegre_2.jpeg';
 import { HStack, VStack } from '../../shared/ui/Stack';
 import { Slider } from '../../components/Slider/Slider';
 
@@ -56,6 +58,16 @@ export const AboutSchoolInfoPage = memo((props: AboutSchoolInfoPageProps) => {
                         />
                     </>
                 ))}
+            </>
+        );
+    }
+    if (title === 'Наши награды') {
+        content = (
+            <>
+                <h2 className={cls.header}>{title}</h2>
+                <HStack gap="32" justify="center" className={cls.wrapper_img}>
+                    <Slider imagePaths={[award_1, award_2]} />
+                </HStack>
             </>
         );
     }

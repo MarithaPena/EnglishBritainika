@@ -19,6 +19,7 @@ export function MethodsPage() {
     const cardStyle = {
         backgroundColor: 'rgb(202, 199, 199)',
         padding: '1.5rem',
+        height: '70px',
         borderRadius: '1rem',
         boxShadow: '0 4px 6px rgba(0, 0, 0, 0.05)',
         borderLeft: '4px solid #2563eb',

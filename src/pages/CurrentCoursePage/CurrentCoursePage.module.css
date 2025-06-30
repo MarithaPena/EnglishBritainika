@@ -11,6 +11,7 @@
 }
 
 .description {
+    font-family: 'Montserrat', sans-serif;
     font-size: 20px;
     font-style: italic;
     width: 750px;
@@ -23,20 +24,19 @@
 }
 
 .vertical_slider {
-    width: 750px;
+    width: 850px;
     flex-wrap: wrap;
     padding: 20px;
     gap: 50px;
 }
 
 .slide {
-    flex: 0 0 270px;
-    height: 270px;
+    flex: 0 0 370px;
+    height: 370px;
     box-sizing: border-box;
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
 }
 
 .image {
