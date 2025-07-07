@@ -1,0 +1,9 @@
+.MainPage {
+    margin-top: 100px;
+}
+
+@media (max-width: 1024px) {
+    .MainPage {
+        margin-top: 70px;
+    }
+}

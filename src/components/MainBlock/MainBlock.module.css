@@ -1,0 +1,126 @@
+.MainBlock {
+    /* background: linear-gradient(to right, rgb(31 41 55), rgb(66, 97, 141)); */
+    /* background-image: url('../../shared/assets/img/media/13.jpeg'); Путь к твоей PNG-рамке */
+    padding: 0 20px 0 20px;
+    height: 90vh;
+    background-image: url('../../shared/assets/img/logo/main_foto.jpg'); /* Путь к твоей PNG-рамке */
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    z-index: -1;
+}
+
+.MainBlock_small {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    /* background: linear-gradient(to right, rgb(31 41 55), rgb(66, 97, 141)); */
+    background-image: url('../../shared/assets/img/mobile/main_foto.JPG'); /* Путь к твоей PNG-рамке */
+    background-size: cover;
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    padding: 0 20px 0 20px;
+    height: 93vh;
+    position: relative;
+    z-index: -1;
+    text-align: center;
+}
+
+.main_foto_small {
+    width: 100%;
+}
+
+.title,
+.title_small {
+    color: rgb(255, 215, 0);
+    font-weight: 900 !important;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    z-index: 2;
+    font-family: 'Roboto', sans-serif;
+}
+
+.title_small {
+    margin-top: 10vh;
+}
+
+.descr,
+.descr_small {
+    color: #bdbbb2;
+    z-index: 222;
+}
+
+.descr {
+    margin-top: 20px;
+    font-size: 25px;
+}
+
+.descr_small {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+/* .border {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url('../../shared/assets/img/border/border.png');
+    background-size: cover;
+    pointer-events: none;
+    z-index: 2;
+} */
+
+.wrapper_border {
+    position: relative;
+    width: 684px;
+    height: 645px;
+    display: flex;
+    justify-content: center;
+}
+
+.wrapper {
+    padding-top: 55vh;
+    padding-left: 100px;
+}
+
+.img {
+    width: 785px;
+    margin-top: 26px;
+    height: 400px;
+    object-fit: cover;
+    display: block;
+}
+
+.shadow {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.display_none {
+    display: none;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+    .descr_small {
+        font-size: 23px;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .MainBlock_small {
+        align-items: start;
+        justify-content: center;
+        text-align: left;
+    }
+    .title_small {
+        margin-top: 0;
+    }
+    .descr_small {
+        margin-top: 0;
+        font-size: 27px;
+    }
+}

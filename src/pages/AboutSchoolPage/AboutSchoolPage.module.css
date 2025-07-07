@@ -1,0 +1,44 @@
+.MethodsPage {
+    background-color: rgb(35, 38, 44);
+    color: rgb(202, 199, 199);
+    min-height: 100vh;
+    margin-top: 100px;
+}
+
+.course {
+    background-color: rgb(31 41 55);
+    border: 1px solid white;
+    padding: 20px;
+    font-size: 20px;
+    text-align: center;
+}
+
+.link {
+    text-decoration: none;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 30px;
+}
+
+.header {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: rgb(202, 199, 199);
+    margin-bottom: 2rem;
+}
+
+@media only screen and (max-width: 768px) {
+    .MethodsPage {
+        margin-top: 70px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .header {
+        margin-top: 25px;
+    }
+}

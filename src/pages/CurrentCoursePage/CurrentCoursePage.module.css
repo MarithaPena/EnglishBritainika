@@ -1,0 +1,158 @@
+.MediaBlock {
+    background-color: rgb(17 24 39);
+    color: rgb(202, 199, 199);
+    margin-top: 100px;
+    min-height: 90vh;
+    padding: 0 20px 15px 20px;
+}
+
+.header {
+    font-size: 30px;
+}
+
+.content {
+    margin: 50px 0 0 0;
+    gap: 40px;
+    padding: 0 0 20px 0;
+}
+
+.description {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    text-align: center;
+    line-height: 30px;
+    width: 644px;
+    margin-top: 30px;
+}
+
+.slider {
+    margin-top: 30px;
+}
+
+.vertical_slider {
+    width: 675px;
+    flex-wrap: wrap;
+    padding: 20px;
+    gap: 50px;
+    overflow: auto;
+    height: 600px;
+}
+
+.slide {
+    flex: 0 0 290px;
+    height: 290px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.image {
+    width: 290px;
+    height: 290px;
+    object-fit: contain;
+    box-sizing: border-box;
+    /* outline: 1px solid red; */
+}
+
+.border {
+    position: absolute;
+    top: -54px;
+    left: -54px;
+    width: 399px;
+    height: 366px;
+    background-image: url('../../shared/assets/img/border/border_corses_2.png');
+    background-size: cover;
+    pointer-events: none;
+}
+
+@media (min-width: 769px) and (max-width: 1023px) {
+    .vertical_slider {
+        width: 500px;
+        flex-wrap: wrap;
+        padding: 20px;
+        gap: 50px;
+        overflow: auto;
+        height: 600px;
+    }
+
+    .slide {
+        flex: 0 0 200px;
+        height: 200px;
+        box-sizing: border-box;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    .image {
+        width: 200px;
+        height: 200px;
+        object-fit: contain;
+        box-sizing: border-box;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .MediaBlock {
+        padding: 0 10px;
+        margin-top: 70px;
+    }
+    .description {
+        width: 100%;
+        font-size: 18px;
+    }
+    .header {
+        font-size: 26px;
+        text-align: center;
+    }
+    .wrapper_slider {
+        overflow: hidden;
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 576px) {
+    .wrapper_slider {
+        width: 299px;
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+    .wrapper_slider {
+        width: 499px;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .wrapper_slider {
+        width: 760px;
+    }
+
+    .description {
+        width: 740px;
+        padding: 0 10px;
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    .wrapper_slider,
+    .description {
+        width: 1000px;
+    }
+}
+
+@media only screen and (min-width: 1441px) {
+    .wrapper_slider {
+        width: 1430px;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+    .header {
+        margin-top: 50px;
+    }
+}

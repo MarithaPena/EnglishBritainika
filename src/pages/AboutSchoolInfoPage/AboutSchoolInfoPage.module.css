@@ -1,0 +1,262 @@
+.AboutSchoolInfoPage {
+    padding: 20px 0 30px 0;
+    background-color: rgb(9, 27, 41);
+    color: rgb(202, 199, 199);
+    margin-top: 70px;
+    min-height: 100vh;
+}
+
+.AboutSchoolInfoPage h2 {
+    text-align: center;
+}
+
+.wrapper_block {
+    margin-top: 200px;
+    flex-wrap: wrap;
+    gap: 450px;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    gap: 400px;
+    margin-top: 120px;
+    flex-wrap: wrap;
+}
+
+.header {
+    margin-top: 50px;
+    font-size: 30px;
+}
+
+.descr {
+    font-family: 'Montserrat', sans-serif;
+    margin-top: 10px;
+    font-size: 18px;
+    font-style: italic;
+    text-align: center;
+    padding: 0 20px;
+}
+
+.slider {
+    margin-top: 30px;
+}
+
+.wrapper_img,
+.wrapper_img_diploms,
+.wrapper_img_award {
+    height: 503px;
+    width: 313px;
+    position: relative;
+}
+
+.wrapper_img_diploms:first-child {
+    margin-top: 0;
+}
+
+.wrapper_img_diploms {
+    margin-top: 400px;
+    position: relative;
+    width: 380px;
+    height: 536px;
+    left: 15px;
+}
+
+.img {
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+    right: 13px;
+    position: relative;
+}
+
+.degree_6 {
+    background-image: url('../../shared/assets/img/degree/6.jpg');
+    background-size: cover;
+}
+
+.degree_5 {
+    background-image: url('../../shared/assets/img/degree/5.jpg');
+    background-size: cover;
+}
+
+.degree_4 {
+    background-image: url('../../shared/assets/img/degree/4.jpg');
+    background-size: cover;
+}
+
+.degree_3 {
+    background-image: url('../../shared/assets/img/degree/3.jpg');
+    background-size: cover;
+}
+
+.degree_2 {
+    background-image: url('../../shared/assets/img/degree/2.jpg');
+    background-size: cover;
+}
+
+.degree_1 {
+    background-image: url('../../shared/assets/img/degree/1.jpg');
+    background-size: cover;
+}
+
+.img_award {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    box-sizing: border-box;
+    z-index: 100;
+    position: relative;
+}
+
+.border {
+    position: absolute;
+    top: -191px;
+    left: -196px;
+    width: 740px;
+    height: 948px;
+    background-image: url('../../shared/assets/img/border/border_awards.png');
+    background-size: cover;
+    pointer-events: none;
+}
+
+.margin_bottom {
+    margin-bottom: 250px;
+}
+
+.border_award {
+    position: absolute;
+    top: -111px;
+    left: -196px;
+    width: 700px;
+    height: 700px;
+    background-image: url('../../shared/assets/img/border/border_awards.jpeg');
+    background-size: cover;
+    pointer-events: none;
+    z-index: 1;
+    outline: 1px solid rgb(9, 27, 41);
+}
+
+.descr_award {
+    position: absolute;
+    bottom: 32px;
+    left: -1px;
+    width: 98%;
+    background: rgba(0, 0, 0, 0.7);
+    color: white;
+    padding: 10px 5px;
+    text-align: center;
+    font-size: 16px;
+    z-index: 100;
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1450px) {
+    .content {
+        flex-direction: column;
+        gap: 250px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .AboutSchoolInfoPage {
+        padding: 0 0 70px 0;
+    }
+
+    .wrapper_img_diploms {
+        margin-top: 200px;
+        width: 170px;
+        height: 240px;
+        left: 15px;
+    }
+    .wrapper_block {
+        margin-top: 80px;
+    }
+    .img {
+        right: 16px;
+    }
+    .border {
+        top: -72px;
+        left: -89px;
+        width: 315px;
+        height: 403px;
+    }
+    .header {
+        margin-top: 20px;
+        font-size: 24px;
+    }
+    .content {
+        margin-top: 70px;
+        gap: 130px;
+    }
+    .wrapper_img_award {
+        width: 200px;
+        height: 200px;
+    }
+    .border_award {
+        width: 312px;
+        height: 303px;
+        top: -56px;
+        left: -56px;
+    }
+    .small_wrapper_img {
+        width: 200px;
+        height: 200px;
+        justify-content: center;
+        align-items: center;
+    }
+    .descr_award {
+        position: absolute;
+        bottom: 0px;
+        left: -1px;
+        width: 97%;
+        padding: 6px 5px;
+        font-size: 13px;
+    }
+}
+
+.wrapper_slider {
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1024px) {
+    .header {
+        margin-top: 50px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .wrapper_slider {
+        width: 299px;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    .content {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (min-width: 577px) and (max-width: 768px) {
+    .wrapper_slider {
+        width: 499px;
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .wrapper_slider {
+        width: 760px;
+    }
+}
+
+@media only screen and (min-width: 1025px) and (max-width: 1440px) {
+    .wrapper_slider {
+        width: 1000px;
+    }
+}
+
+@media only screen and (min-width: 1441px) {
+    .wrapper_slider {
+        width: 1430px;
+    }
+}

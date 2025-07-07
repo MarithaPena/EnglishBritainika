@@ -1,0 +1,55 @@
+.Header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px 0 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(128, 128, 128);
+    z-index: 111;
+    height: 90px;
+}
+
+.wrapper_a {
+    margin-right: 50px;
+}
+
+.wrapper_a a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.mob_menu {
+    display: none;
+}
+
+.logo {
+    height: 70px;
+}
+
+@media only screen and (max-width: 1024px) {
+    .Header {
+        /* height: 7vh; */
+    }
+
+    .wrapper_a {
+        display: none;
+    }
+
+    .mob_menu {
+        display: block;
+        margin-right: 15px;
+        padding-bottom: 5px;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .logo {
+        height: 50px;
+    }
+    .Header {
+        height: 60px;
+    }
+}

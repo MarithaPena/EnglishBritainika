@@ -1,0 +1,204 @@
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes scaleOut {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: scale(0.9);
+        opacity: 0;
+    }
+}
+
+.MediaBlock {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.sliderWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    margin-top: 20px;
+}
+
+.carouselContainer {
+    overflow: hidden;
+    width: calc(3 * 500px + 2 * 16px);
+    height: 500px;
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.carouselTrack {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    height: 100%;
+}
+
+.slide {
+    flex: 0 0 500px;
+    height: 500px;
+    padding: 0 8px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.image {
+    width: 500px;
+    height: 500px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.navButton {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 50%;
+    transition: background-color 0.3s;
+    z-index: 1;
+}
+
+.navButton:hover:not(:disabled) {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.navButton:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+/* --- Модальное окно --- */
+
+.modalOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.85);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+    animation: fadeIn 0.3s forwards;
+}
+
+.modalOverlay.hidden {
+    animation: fadeOut 0.3s forwards;
+}
+
+/* --- Контейнер с изображением --- */
+.modalImageWrapper {
+    max-width: 90vw;
+    max-height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1001;
+    position: relative;
+}
+
+.modalImage {
+    width: auto;
+    height: auto;
+    max-width: 90vw;
+    max-height: 90vh;
+    object-fit: contain;
+    display: block;
+}
+
+/* --- Кнопки навигации ← → (зафиксированы) --- */
+.modalNavButtonLeft,
+.modalNavButtonRight {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 32px;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.6);
+    border: none;
+    border-radius: 50%;
+    padding: 10px 15px;
+    cursor: pointer;
+    z-index: 1002;
+    transition: background-color 0.3s;
+}
+
+.modalNavButtonLeft:hover,
+.modalNavButtonRight:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.modalNavButtonLeft {
+    left: 20px;
+}
+
+.modalNavButtonRight {
+    right: 20px;
+}
+
+/* --- Кнопка закрытия × --- */
+.modalCloseButton {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    font-size: 32px;
+    color: #ff4d4f;
+    background: white;
+    border-radius: 50%;
+    border: 2px solid white;
+    text-align: center;
+    line-height: 1;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 1003;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease;
+}
+
+.modalCloseButton:hover {
+    transform: scale(1.1);
+}
